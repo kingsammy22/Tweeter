@@ -1,12 +1,14 @@
 import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
+//import { ReactiveVar } from 'meteor/reactive-var';
+
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './main.html';
-
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
-});
+import '../lib/collection.js';
+import './Personalinfo.html';
+import './tweeting.html';
+import './tweets.html';
 
 Template.hello.helpers({
   counter() {
