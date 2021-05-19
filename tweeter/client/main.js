@@ -9,14 +9,17 @@ import '../lib/collection.js';
 import './Personalinfo.html';
 import './tweeting.html';
 import './tweets.html';
+import './addpersons.html';
+import './addpersons.js';
 
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  },
+Template.personalinfo.helpers({
+  persons(){
+    return tweetdb.find();
+  }
+
 });
 
-Template.hello.events({
+Template.personalinfo.events({
   'click button'(event, instance) {
     // increment the counter when button is clicked
     instance.counter.set(instance.counter.get() + 1);

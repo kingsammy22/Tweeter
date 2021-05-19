@@ -1,0 +1,33 @@
+<template name ="addperson">
+    <div class="row justify-content-center">
+        <div class="col-lg-2 text-center my-3">
+                    <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+                Add New User
+            </button>
+        </div>
+    </div>
+  
+    
+    <!-- Modal -->
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addModalLabel">Add a user</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+             <p>Username: <input type="text" placeholder=" Choose a Username." id="uname"></p>
+             <p>Profile Picture: <input class="w-100" type="text" placeholder="Profile Picture URl" id="ppic"></p>
+             <p>Description: <input class="w-100" type="text" placeholder="A short Description" id="descr"></p>
+             <p>Age: <input type="number" id="uage"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary js-save">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</template>
