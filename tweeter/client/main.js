@@ -11,6 +11,9 @@ import './tweeting.html';
 import './tweets.html';
 import './addpersons.html';
 import './addpersons.js';
+import './tweeting.js';
+import './tweets.js';
+import './navbar.html';
 
 Template.personalinfo.helpers({
   persons(){
